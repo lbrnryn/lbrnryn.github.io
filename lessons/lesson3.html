@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../style.css">
+  <title>Document</title>
+</head>
+<body class="bg-primary-black text-white">
+  <div class="container">
+    <a href="/" class="btn btn-outline text-white">Back</a>
+    <h1 class="text-center">Simple CRUD Application (Part 2 - HTML)</h1>
+    <h6 class="text-center">h1-h6 | form | label | input(text)</h6>
+    <h2 class="mt-1">Heading Tag</h2>
+    <p>Ang heading tag ay ginagamit bilang mga title or subtitle sa isang website. h1 to h6 (Biggest to smallest font of heading)</p>
+    <table class="mt-1">
+      <tr>
+        <th>HTML</th>
+        <th>OUTPUT</th>
+      </tr>
+      <tr>
+        <td>&lt;h1&gt;This is heading 1&lt;/h1&gt;</td>
+        <td><h1>This is heading 1</h1></td>
+      </tr>
+      <tr>
+        <td>&lt;h2&gt;This is heading 2&lt;/h2&gt;</td>
+        <td><h2>This is heading 2</h2></td>
+      </tr>
+      <tr>
+        <td>&lt;h3&gt;This is heading 3&lt;/h3&gt;</td>
+        <td><h3>This is heading 3</h3></td>
+      </tr>
+      <tr>
+        <td>&lt;h4&gt;This is heading 4&lt;/h4&gt;</td>
+        <td><h4>This is heading 4</h4></td>
+      </tr>
+      <tr>
+        <td>&lt;h5&gt;This is heading 5&lt;/h5&gt;</td>
+        <td><h5>This is heading 5</h5></td>
+      </tr>
+      <tr>
+        <td>&lt;h6&gt;This is heading 6&lt;/h6&gt;</td>
+        <td><h6>This is heading 6</h6></td>
+      </tr>
+    </table>
+    <br>
+    <hr>
+    <h2 class="mt-1">Form Tag</h2>
+    <p>Ang form tag ay ginagamit para makakolekta ng mga input ng mga user ng isang website or app at kadalasang ipinoproseso ito sa backend katulad ng Node JS, PHP, Python at iba pa.</p>
+    <br>
+    <code>&lt;form&gt;&lt;/form&gt;</code>
+    <br><br>
+    At sa mismong start tag &lt;form&gt; ay merong inilalagay na mga attributes katulad ng action(routes kung saan dadalhin ang mga nakolektang input galing sa user) at method(GET or POST(ito ang kadalasan ginagamit kaysa sa GET)) attributes
+    <br><br>
+    <code>&lt;form action="/sampleroute" method="POST"&gt;&lt;/form&gt;</code>
+    <br><br>
+    <hr>
+    <h2 class="mt-1">Form Element (label)</h2>
+    <p>Ang &lt;label&gt; tag ay ginagamit para magbigay kahulugan sa isang input box upang malaman ng mga user kung ano ang ilalagay nila dito. Meron itong for attribute na kung saan dapat pareho ito ng id ng input tag na tinutukoy nito.</p>
+    <table class="mt-1">
+      <tr>
+        <th>HTML</th>
+        <th>OUTPUT</th>
+      </tr>
+      <tr>
+        <td>&lt;label for="myText"&gt;Click here to show the blinking text cursor on the input&lt;/label&gt;</td>
+        <td><label for="myText">Click here to show the blinking text cursor on the input</label></td>
+      </tr>
+      <tr>
+        <td>&lt;input type="text" id="myText"&gt;</td>
+        <td><input type="text" id="myText"></td>
+      </tr>
+    </table>
+    <br>
+    <p>Ang blinking text cursor ay ang vertical line na makikita kapag pinindot ang isang input element</p>
+    <br><br>
+    <hr>
+    <h2 class="mt-1">Form Element (input type="text")</h2>
+    <p>Ang input type="text" ay isa sa mga klase ng input na kadalasang ginagamit sa form element, sa pamamagitan nito makukuha natin ang mga informasyon na ilalagay ng user sa form element na ito</p>
+    <table class="mt-1">
+      <tr>
+        <th>HTML</th>
+        <th>OUTPUT</th>
+      </tr>
+      <tr>
+        <td>&lt;input type="text"&gt;</td>
+        <td><input type="text"></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

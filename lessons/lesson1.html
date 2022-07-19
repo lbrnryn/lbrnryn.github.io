@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../style.css">
+  <title>How to combine strings</title>
+</head>
+<body class="bg-primary-black text-white">
+  <div class="container">
+    <a href="/" class="btn btn-outline text-white">Back</a>
+    <h1 class="text-center">How to combine strings</h1>
+    <h5 class="text-center">+ Operator VS Template String</h5>
+    <pre class="mt-1">
+      const firstname = "Juan";
+      const lastname = "Dela Cruz";
+      const age = 28;
+
+      + Operator
+      console.log("My name is " + firstname + lastname + "," + age + " years old")
+      Output: My name is Juan Dela Cruz, 28 years old
+
+      Template Literals / Template String
+      console.log(`My name is ${firstname} ${lastname}, ${age} years old`)
+      Output: My name is Juan Dela Cruz, 28 years old
+
+
+      You will notice that it is easy to read the sentence using Template Literals / Template String than using the + Operator
+    </pre>
+  </div>
+</body>
+</html>

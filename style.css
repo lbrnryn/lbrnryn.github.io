@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --primaryBlack: #202020;
+  --secondaryBlack: #181818;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* others */
+a {
+  text-decoration: none;
+}
+
+/* background-colors */
+.bg-primary-black {
+  background-color: var(--primaryBlack);
+}
+.bg-secondary-black {
+  background-color: var(--secondaryBlack);
+}
+
+/* text colors */
+.text-white {
+  color: white;
+}
+
+/* text alignment */
+.text-center {
+  text-align: center;
+}
+
+/* padding */
+.p-1 {
+  padding: 1rem;
+}
+
+/* margin */
+.mt-1 {
+  margin-top: 1rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.mx-auto {
+  margin: auto;
+}
+
+/* border */
+.border-radius-1 {
+  border-radius: .5rem;
+}
+.border-red {
+  border: 1px solid red;
+}
+
+/* Containers */
+.container {
+  width: 80rem;
+  /* border: 1px solid red; */
+  padding: 1rem;
+  margin: auto;
+}
+
+/* Flexbox */
+.d-flex {
+  display: flex;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+.align-items-center {
+  align-items: center;
+}
+
+/* Width and Height */
+.w-50 {
+  width: 50rem;
+}
+
+/* Button */
+.btn {
+  padding: .0625rem .25rem;
+  font-size: .8rem
+}
+.btn-outline {
+  background-color: transparent;
+  border: none;
+  outline: 2px solid white;
+}
+
+/* Table */
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  padding: .5rem .5rem;
+}
