@@ -39,6 +39,12 @@ a {
 .p-1 {
   padding: 1rem;
 }
+.p-2 {
+  padding: 5rem;
+}
+.ps-2 {
+  padding-left: 2rem;
+}
 
 /* margin */
 .mt-1 {
@@ -49,6 +55,9 @@ a {
 }
 .mx-auto {
   margin: auto;
+}
+.ms-auto {
+  margin-left: auto;
 }
 
 /* border */
@@ -73,6 +82,9 @@ a {
 }
 .justify-content-center {
   justify-content: center;
+}
+.justify-content-end {
+  justify-content: flex-end;
 }
 .flex-column {
   flex-direction: column;
@@ -107,4 +119,21 @@ table, th, td {
 }
 th, td {
   padding: .5rem .5rem;
+}
+
+/* List */
+.list-group {
+  list-style: none;
+}
+
+.d-block {
+  display: block;
+}
+
+/* Fonts */
+.fs-1 {
+  font-size: .8rem;
+}
+.fs-2 {
+  font-size: 2rem;
 }
