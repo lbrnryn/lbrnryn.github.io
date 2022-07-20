@@ -11,12 +11,12 @@
   <div class="container">
     <a href="/" class="btn btn-outline text-white">Home</a>
     <h1 class="text-center">Simple CRUD Application (Part 2 - HTML)</h1>
-    <h6 class="text-center">h1-h6 | form | label | input(text)</h6>
-    <h2 class="mt-1">Heading Tag</h2>
-    <p>Ang heading tag ay ginagamit bilang mga title or subtitle sa isang website. h1 to h6 (Biggest to smallest font of heading)</p>
+    <h6 class="text-center">h1-h6 | form | label | input(text) | ul | li</h6>
+    <h2 class="mt-1">Headings</h2>
+    <p>Heading tags is used as title or subtitle in a websiteh1 to h6 (Biggest to smallest font of heading)</p>
     <table class="mt-1">
       <tr>
-        <th>HTML</th>
+        <th>HTML Tag</th>
         <th>OUTPUT</th>
       </tr>
       <tr>
@@ -46,41 +46,52 @@
     </table>
     <br>
     <hr>
-    <h2 class="mt-1">Form Tag</h2>
-    <p>Ang form tag ay ginagamit para makakolekta ng mga input ng mga user ng isang website or app at kadalasang ipinoproseso ito sa backend katulad ng Node JS, PHP, Python at iba pa.</p>
+    <h2 class="mt-1">Form</h2>
+    <p>Form tag is used to collect user inputs and frequently processed in the backend like Node JS, PHP, Python and other backend languages.</p>
     <br>
-    <code>&lt;form&gt;&lt;/form&gt;</code>
-    <br><br>
-    At sa mismong start tag &lt;form&gt; ay merong inilalagay na mga attributes katulad ng action(routes kung saan dadalhin ang mga nakolektang input galing sa user) at method(GET or POST(ito ang kadalasan ginagamit kaysa sa GET)) attributes
-    <br><br>
-    <code>&lt;form action="/sampleroute" method="POST"&gt;&lt;/form&gt;</code>
+    <p>&lt;form&gt;&lt;/form&gt;</p>
+    <br>
+    <p>Form has attributes like <b>action</b>(routes where user input goes) and method <b>post</b></p>
+    <br>
+    <p>&lt;form action="/sampleroute" method="POST"&gt;&lt;/form&gt;</p>
     <br><br>
     <hr>
     <h2 class="mt-1">Form Element (label)</h2>
-    <p>Ang &lt;label&gt; tag ay ginagamit para magbigay kahulugan sa isang input box upang malaman ng mga user kung ano ang ilalagay nila dito. Meron itong for attribute na kung saan dapat pareho ito ng id ng input tag na tinutukoy nito.</p>
+    <p>Label tag is used to give input element meaning. It has a <b>for</b> attribute with a value that is the same as the <b>id</b> name of the input its referring to, so the hidden javascript on this element will work.</p>
     <table class="mt-1">
       <tr>
-        <th>HTML</th>
+        <th>HTML Tag</th>
         <th>OUTPUT</th>
       </tr>
       <tr>
-        <td>&lt;label for="myText"&gt;Click here to show the blinking text cursor on the input&lt;/label&gt;</td>
-        <td><label for="myText">Click here to show the blinking text cursor on the input</label></td>
+        <td>
+          &lt;label for="myText"&gt;First Name&lt;/label&gt;
+          <br>
+          &lt;input type="text" id="myText"&gt;
+        </td>
+        <td>
+          <label for="myText">First Name</label>
+          <input type="text" id="myText">
+        </td>
+      </tr>
+      <!-- <tr>
+        <td>&lt;label for="myText"&gt;First Name&lt;/label&gt;</td>
+        <td><label for="myText">First Name</label></td>
       </tr>
       <tr>
         <td>&lt;input type="text" id="myText"&gt;</td>
         <td><input type="text" id="myText"></td>
-      </tr>
+      </tr> -->
     </table>
     <br>
-    <p>Ang blinking text cursor ay ang vertical line na makikita kapag pinindot ang isang input element</p>
+    <p>Blinking text cursor is the vertical line that blinks in and out, so when you click the label element, the blinking text cursor on the input its referring to will appear.</p>
     <br><br>
     <hr>
     <h2 class="mt-1">Form Element (input type="text")</h2>
-    <p>Ang input type="text" ay isa sa mga klase ng input na kadalasang ginagamit sa form element, sa pamamagitan nito makukuha natin ang mga informasyon na ilalagay ng user sa form element na ito</p>
+    <p>Input type="text" is one of the type of input element frequently used in a form, this will get any information or data that is being type in here by the user.</p>
     <table class="mt-1">
       <tr>
-        <th>HTML</th>
+        <th>HTML Tag</th>
         <th>OUTPUT</th>
       </tr>
       <tr>
@@ -88,6 +99,86 @@
         <td><input type="text"></td>
       </tr>
     </table>
+    <br><br>
+    <hr>
+    <h2 class="mt-1">Button (button type="submit")</h2>
+    <p><b>Button type="submit"</b> is one of the 3 types (submit | reset | button) of button which submits the current form data. It is similar to <b>input type="submit"</b> in terms of submitting the data from the form to the client or backend</p>
+    <table class="mt-1">
+      <tr>
+        <th>HTML Tag</th>
+        <th>OUTPUT</th>
+      </tr>
+      <tr>
+        <td>&lt;button type="submit"&gt;Submit&lt;button&gt;</td>
+        <td><button type="submit">Submit</button></td>
+      </tr>
+    </table>
+    <br><br>
+    <hr>
+    <h2 class="mt-1">UL(Unordered List)</h2>
+    <p><b>UL</b> is one of the 2 types (ul | ol) of list that also groups a set of related items and its list of items will be marked with bullets by default. There are also different list item markers such as (disc | circle | square | none) in Unordered List and (type = "1" | "A" | "a" | "I" | "i") in Ordered List.</p>
+    <table class="mt-1">
+      <tr>
+        <th>HTML Tag</th>
+        <th>OUTPUT</th>
+      </tr>
+      <tr>
+        <td>
+          <p>&lt;ul&gt;</p>
+          <p>&nbsp&nbsp&lt;li&gt;List Item&lt;/li&gt;</p>
+          <p>&lt;/ul&gt;</p>
+        </td>
+        <td><ul class="ps-1"><li>List Item</li></ul></td>
+      </tr>
+    </table>
+    <br><br>
+    <hr>
+    <h2 class="mt-1">List Item</h2>
+    <p>List item is always use inside of UL (Unordered List) or OL (Ordered List), each list item marked with bullet by default when using UL (Unordered List) and marked with number by default when using OL (Ordered List)</p>
+    <div class="d-flex gap-1 mt-1">
+      <table>
+        <caption>UL (Unordered List)</caption>
+        <tr>
+          <th>HTML Tag</th>
+          <th>OUTPUT</th>
+        </tr>
+        <tr>
+          <td>
+            <p>&lt;ul&gt;</p>
+            <p>&nbsp&nbsp&lt;li&gt;List Item&lt;/li&gt;</p>
+            <p>&lt;/ul&gt;</p>
+          </td>
+          <td><ul class="ps-1"><li>List Item</li></ul></td>
+        </tr>
+      </table>
+      <table>
+        <caption>OL (Ordered List)</caption>
+        <tr>
+          <th>HTML Tag</th>
+          <th>OUTPUT</th>
+        </tr>
+        <tr>
+          <td>
+            <p>&lt;ol&gt;</p>
+            <p>&nbsp&nbsp&lt;li&gt;List Item&lt;/li&gt;</p>
+            <p>&lt;/ol&gt;</p>
+          </td>
+          <td><ol class="ps-1"><li>List Item</li></ol></td>
+        </tr>
+      </table>
+    </div>
+    <br><br>
+    <hr>
+    <h2 class="mt-1">Coding Time</h2>
+    <p>Now we know how to use those HTML elements, so we are going to use what we learn to make the basic structure of our Simple CRUD App. Follow these steps:</p>
+    <br>
+    <ol class="ps-2">
+      <li>On the Desktop, create a folder named CRUD APP</li>
+      <li>Then, open your text editor, click Add Folders on the left (If you use Atom)</li>
+      <li>Then, locate and select the folder you created and click Select Folder</li>
+      <li>You will notice on the left part of the text editor the folder you select</li>
+      <li>Right click on the folder, and click New File and name it as index.html</li>
+    </ol>
   </div>
 </body>
 </html>
