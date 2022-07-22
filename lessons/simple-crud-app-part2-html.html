@@ -13,7 +13,7 @@
     <h1 class="text-center">Simple CRUD Application (Part 2 - HTML)</h1>
     <h6 class="text-center">h1-h6 | form | label | input(text) | ul | li</h6>
     <h2 class="mt-1">Headings</h2>
-    <p>Heading tags is used as title or subtitle in a websiteh1 to h6 (Biggest to smallest font of heading)</p>
+    <p>Heading tags is used as title or subtitle in a website. h1 to h6 (Biggest to smallest font of heading)</p>
     <table class="mt-1">
       <tr>
         <th>HTML Tag</th>
@@ -178,7 +178,58 @@
       <li>Then, locate and select the folder you created and click Select Folder</li>
       <li>You will notice on the left part of the text editor the folder you select</li>
       <li>Right click on the folder, and click New File and name it as index.html</li>
+      <li>In the index.html, type <b>!</b> (exclamation point) then press <b>tab</b>, you don't need to type those first codes anymore, it's possible with <b>emmet</b> plugin/tool that we download earlier.</li>
+      <li>
+        On the &lt;body&gt;&lt;/body&gt; tag:
+          <ul class="ps-2">
+            <li>Type h1, then press tab, then press Enter</li>
+            <li>Type form>label+input#name+button:submit, then press tab, then press Enter</li>
+            <li>Type ul, then press tab, then press Enter</li>
+            <li>Type script:src, then press tab</li>
+          </ul>
+      </li>
+      <li>
+        Finally, we need to put these text in some html tags:
+          <ul class="ps-2">
+            <li>Inside the &lt;title&gt;&lt;/title&gt; write Simple CRUD App (this is optional)</li>
+            <li>Inside &lt;h1&gt;&lt;/h1&gt; write My Friends</li>
+            <li>In the <b>for</b> attribute inside the &lt;label&gt; start tag, write name</li>
+            <li>Inside &lt;label for="name"&gt;&lt;/label&gt; write Name</li>
+            <li>Inside &lt;button&gt;&lt;/button&gt; write Submit</li>
+            <li>In the <b>src</b> attribute inside the &lt;script&gt; start tag, write index.js</li>
+          </ul>
+      </li>
     </ol>
+    <br>
+    <p>Check your html codes if its the same as below:</p>
+    <br>
+    <fieldset class="p-1">
+      <legend>index.html</legend>
+      <p>&lt;!DOCTYPE html&gt;</p>
+      <p>&lt;html lang="en"&gt;</p>
+      <p>&lt;head&gt;</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Document&lt;/title&gt;</p>
+      <p>&lt;/head&gt;</p>
+      <p>&lt;body&gt;</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;My Friends&lt;/h1&gt;</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="name"&gt;Name&lt;/label&gt;</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input id="name" type="text"&gt;</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="submit"&gt;Submit&lt;/button&gt;</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;&lt;/ul&gt;</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="index.js"&gt;&lt;/script&gt;</p>
+      <p>&lt;/body&gt;</p>
+      <p>&lt;/html&gt;</p>
+    </fieldset>
+    <br><br><br>
+    <div class="d-flex justify-content-between">
+      <a href="https://lbrnryn.github.io/lessons/simple-crud-app-part1-intro-and-setup.html" class="btn-outline text-white p-1"><span class="fs-2">&#8678;</span>Simple CRUD Application (Part 1 - Introduction and Setup)</a>
+      <a href="https://lbrnryn.github.io/lessons/simple-crud-app-part3-javascript1.html" class="btn-outline text-white p-1"><span class="fs-2">&#8680;</span>Simple CRUD Application (Part 3 - Javascript [1/2])</a>
+    </div>
   </div>
 </body>
 </html>
