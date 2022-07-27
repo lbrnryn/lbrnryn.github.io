@@ -19,25 +19,82 @@
     <br>
     <ol class="ps-2">
       <li>Login to your Github account</li>
-      <li>On the upper right corner, click the + dropdown. Then, click New Repository</li>
       <li>
-        Fill up the Repository name with this format [username].github.io <b>(Ex: rynlbrn.github.io)</b>
+        On the upper right corner, click the + dropdown. Then, click New Repository
+        <br>
+        <img src="../images/github1.png" style="width: 50rem;">
       </li>
-      <li>Scroll down and click Create Repository</li>
+      <li>
+        Fill up the Repository name with this format [username].github.io
+        <br>
+        <img src="../images/github2.png" style="width: 50rem;">
+      </li>
+      <li>
+        Scroll down and click Create Repository
+        <br>
+        <img src="../images/github3.png" style="width: 50rem;">
+      </li>
       <li>
         Copy the url and open a terminal and type these in the terminal:
+        <img src="../images/github4.png" style="width: 50rem;">
         <ul class="ps-2">
-          <li>Navigate to Desktop by typing <b>cd Desktop</b></li>
-          <li>Copy the url from the github repository and paste it on the terminal <b>git clone &lt;url&gt;</b></li>
-          <li>Open a text editor and open the folder created earlier and create a file name <b>index.html</b> and type &lt;h1&gt;Sample HTML file&lt;/h1&gt; inside the file then save</li>
-          <li>Back to the terminal, navigate to the folder by typing <b>cd &lt;foldername&gt;</b></li>
-          <li>Type <b>git init</b></li>
-          <li>Type <b>git add index.html</b></li>
-          <li>Type <b>git commit -m "first commit to github"</b></li>
-          <li>Type <b>git remote add origin &lt;url&gt;</b></li>
-          <li>Type <b>git push -u origin master</b>, then open your github account</li>
-          <li>Back to github and reload the page and scroll down and look for Environments and click to github-pages</li>
-          <li>Finally, click <b>View Deployment</b>, and your website will appear (try it on your phone too..)</li>
+          <li>
+            Navigate to Desktop by typing <b>cd Desktop</b>
+            <br>
+            <img src="../images/cmd1.png" style="width: 30rem;">
+          </li>
+          <li>
+            Type git clone &lt;url copied earlier&gt;, and you will notice in your desktop that there is newly created folder name &lt;username&gt.github.io;
+            <br>
+            <img src="../images/cmd2.png" style="width: 30rem;">
+          </li>
+          <li>
+            Open a text editor and open the folder &lt;username&gt.github.io and create a file name <b>index.html</b> and type &lt;h1&gt;Sample HTML file&lt;/h1&gt; inside the file then save
+            <br>
+            <img src="../images/atom1.png" style="width: 50rem;">
+          </li>
+          <li>
+            Back to the terminal, navigate to the folder by typing <b>cd &lt;foldername&gt;</b>
+            <br>
+            <img src="../images/cmd3.png" style="width: 30rem;">
+          </li>
+          <li>
+            Type <b>git init</b>
+            <br>
+            <img src="../images/cmd4.png" style="width: 30rem;">
+          </li>
+          <li>
+            Type <b>git add index.html</b>
+            <br>
+            <img src="../images/cmd5.png" style="width: 30rem;">
+          </li>
+          <li>
+            Type <b>git commit -m "first commit to github"</b>
+            <br>
+            <img src="../images/cmd6.png" style="width: 30rem;">
+          </li>
+          <li>
+            Type <b>git remote add origin &lt;url&gt;</b>, you will notice in the terminal there is an <b>error: remote origin already exists</b> but if you don't have this error it is ok just go the next step
+            <br>
+            <img src="../images/cmd7.png" style="width: 30rem;">
+          </li>
+          <li>
+            Type <b>git push -u origin master</b>, sign in your account using the sign in box that will appear on your window, and when the authentication succeed page appears you can just close it
+            <br>
+            <img src="../images/cmd8-1.png" style="width: 22rem;">
+            <img src="../images/cmd8-2.png" style="width: 30rem;">
+            <img src="../images/cmd8-3.png" style="width: 30rem;">
+          </li>
+          <li>
+            Back to github and reload the page and scroll down and look for Environments and click to github-pages
+            <br>
+            <img src="../images/github5.png" style="width: 50rem;">
+          </li>
+          <li>
+            Finally, if there is no active sign appears just wait for a few minutes and reload the page until active sign appears, then click <b>View Deployment</b>, and your website will appear (try it on your phone too or other devices)
+            <br>
+            <img src="../images/github6.png" style="width: 50rem;">
+          </li>
         </ul>
       </li>
     </ol>
