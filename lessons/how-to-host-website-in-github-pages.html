@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../style.css">
+  <title>How to host website in github pages</title>
+</head>
+<body class="bg-primary-black text-white">
+  <div class="container">
+    <a href="/" class="btn btn-outline text-white">Home</a>
+    <h1 class="text-center">How to host website in github pages</h1>
+    <p class="mt-1">
+      GitHub Pages is a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website.
+    </p>
+    <br>
+    <p>Before following the steps below you should create an account in Github <a href="https://github.com/">https://github.com/</a>:</p>
+    <br>
+    <ol class="ps-2">
+      <li>Login to your Github account</li>
+      <li>On the upper right corner, click the + dropdown. Then, click New Repository</li>
+      <li>
+        Fill up the Repository name with this format [username].github.io <b>(Ex: rynlbrn.github.io)</b>
+      </li>
+      <li>Scroll down and click Create Repository</li>
+      <li>
+        Copy the url and open a terminal and type these in the terminal:
+        <ul class="ps-2">
+          <li>Navigate to Desktop by typing <b>cd Desktop</b></li>
+          <li>Copy the url from the github repository and paste it on the terminal <b>git clone &lt;url&gt;</b></li>
+          <li>Open a text editor and open the folder created earlier and create a file name <b>index.html</b> and type &lt;h1&gt;Sample HTML file&lt;/h1&gt; inside the file then save</li>
+          <li>Back to the terminal, navigate to the folder by typing <b>cd &lt;foldername&gt;</b></li>
+          <li>Type <b>git init</b></li>
+          <li>Type <b>git add index.html</b></li>
+          <li>Type <b>git commit -m "first commit to github"</b></li>
+          <li>Type <b>git remote add origin &lt;url&gt;</b></li>
+          <li>Type <b>git push -u origin master</b>, then open your github account</li>
+          <li>Back to github and reload the page and scroll down and look for Environments and click to github-pages</li>
+          <li>Finally, click <b>View Deployment</b>, and your website will appear (try it on your phone too..)</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+</body>
+</html>
