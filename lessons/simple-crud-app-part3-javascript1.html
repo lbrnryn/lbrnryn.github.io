@@ -11,8 +11,58 @@
   <div class="container">
     <a href="/" class="btn btn-outline text-white">Home</a>
     <h1 class="text-center">Simple CRUD Application (Part 3 - Javascript [1/2])</h1>
-    <h6 class="text-center">const | querySelector | addEventListener("submit") | createElement | appendChild | innerText | value |</h6>
-    <h1 class="text-center mt-3">Underconstruction</h1>
+    <h6 class="text-center">let | const | regular/anonymous function | for loop | array(access | length | forEach) | += | charAt | Math(floor | random) | document(querySelector | addEventListener | createElement) | events(DOMContentLoaded | submit | click | event object) | if else | element (appendChild | children | classList | contains | inner(HTML | text) | parentElement | remove) | attributes(value | data-) | attribute selector | == vs ===</h6>
+    <!-- <h1 class="text-center mt-3">Underconstruction</h1> -->
+    <h2 class="mt-1">Variables</h2>
+    <p>Variables are containers for storing data or values. These are the rules when making a variable:</p>
+    <!-- <p>Variable names can be written using lowercase or camelCase(these two are most used by lots of devs) letters.</p> -->
+    <ul class="ps-2">
+      <li>It can contains letters, numbers, underscores and dollar signs.</li>
+      <li>It must begin with a letter and can also begin with $ and _</li>
+      <li>It is case sensitive (name and Name are different variables)</li>
+      <li>Reserved words (Javascript keywords) cannot be used as variable</li>
+      <li>Can be written using lowercase or camelCase (these two are most used format when naming a variable)</li>
+      <li>
+        Example: <br>
+        age = 30; <br>
+        lastName = "Doe";
+      </li>
+    </ul>
+    <p>Note: camelCase is used when there are 2 words, the first letter of the second word should be capitalize.</p>
+    <br>
+    <p>There are ways to declare a variable, two of them are let and const keyword that was introduced in ES6(2015). Here is the difference between let and const keyword:</p>
+    <br>
+    <ul class="ps-2">
+      <li>
+        let - keyword is used when the value of the variable will be change overtime. It is also use in a iteration like for loop.
+        <ul class="ps-2">
+          <li>
+            Example: <br>
+            let score = 0;<br>
+            score = 1;<br>
+            for(let i = 0; i < 5; i++) {  }
+          </li>
+        </ul>
+      </li>
+      <li>
+        const - keyword is used when the value of the variable will not change.
+        <ul class="ps-2">
+          <li>
+            Example: <br>
+            const firstName = "ross";
+          </li>
+        </ul>
+      </li>
+      <li>You will notice that I did not explain using var keyword because its an old way to declare a variable and I'm not going to use that in this tutorial.</li>
+    </ul>
+    <br><br>
+    <hr>
+    <br>
+    <h2>Functions</h2>
+    <p>Function is a block of code used to perform specific task.</p>
+     <!-- It is consists of the function keyword followed by name of the function, list of parameters enclosed in parenthesis and separated by commas and action that should be perfomed inside the curly brackets with return keyword(optional). -->
+    <br>
+    <img src="../images/function.png" style="width: 40rem;">
   </div>
 </body>
 </html>
